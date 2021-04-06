@@ -1,10 +1,8 @@
 <!doctype html>
 <html lang="en">
-
   {% include head.html %}
   {% include header.html %}
   {% include script.html %}
-
   <body>
     <!-- Begin #services-section -->
     <section id="services" class="services-section section-global-wrapper">
@@ -20,10 +18,10 @@
             <div class="row services-row services-row-head services-row-1">
                 {% if site.posts.size > 0 %}
                     {% for post in paginator.posts %}
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                         <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
                             <a href="{{ post.url }}">
-                                <p class="services-icon"><img src="/assets/img/42RoMSib.jpeg" />
+                                <p class="services-icon"><img src="{{ post.thumbnail }}" />
                                 </p>
                                 <p class="services-body">{{ post.title }}</p>
                             </a>
@@ -32,23 +30,6 @@
                     {% endfor %}
                 {% endif %}
         
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="services-group wow animated zoomIn" data-wow-offset="40">
-                        <p class="services-icon"><i class="fa fa-apple fa-5x"></i></p>
-                        <h4 class="services-title">Apple</h4>
-                        <p class="services-body">Cras interdum placerat libero vel tempor. Curabitur gravida iaculis erat quis dignissim.</p>
-                        <p class="services-more"><a href="#">Find Out More</a></p>
-                    </div>
-                </div>
-        
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="services-group wow animated fadeInRight" data-wow-offset="40">
-                        <p class="services-icon"><i class="fa fa-thumbs-o-up fa-5x"></i></p>
-                        <h4 class="services-title">EASY TO USE</h4>
-                        <p class="services-body">Cras interdum placerat libero vel tempor. Curabitur gravida iaculis erat quis dignissim.</p>
-                        <p class="services-more"><a href="#">Find Out More</a></p>
-                    </div>        
-                </div>
             </div>
             <!-- End Serivces Row 1 -->
     

@@ -26,7 +26,7 @@ layout: default
         <!-- <div class="panel-heading">title</div> -->
         <div class="panel-body">
           <div class="post__head">
-            <a href=""><img src="{{site.baseurl}}/images/{{page.image}}" style="width: 100%;" /></a>
+            <a href=""><img src="{{page.image}}" style="width: 100%;" /></a>
           </div>
         </div>
       </div>
@@ -49,10 +49,9 @@ layout: default
     <!-- begin post -->
     <article class="post {{ no-image }} col-md-8">
       <div class="panel panel-default">
-        <div class="panel-heading">明细</div>
+        <div class="panel-heading">操作</div>
         <div class="panel-body">
-          <p>This will create all the belts. And the Requester chests are there so when you upgrade your belts they will
-            all be converted to the best ones before new ones are build.</p>
+          <p>{{ post.description }}</p>
           <div class="btn-group" role="group" aria-label="...">
             <button type="button" id="clipboard-btn" class="btn btn-default" data-clipboard-target="#brueprints">复制</button>
             <button type="button" class="btn btn-default">显示/隐藏</button>
@@ -61,20 +60,18 @@ layout: default
         </div>
       </div>
       <div class="panel panel-default">
-        <div class="panel-heading">Details</div>
+        <div class="panel-heading">代码</div>
         <div class="panel-body">
           <div class="post__content" id="brueprints">
             {{ content }}
           </div>
         </div>
       </div>
-
     </article>
     <!-- end post -->
   </div>
 </div>
 <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.8/clipboard.js"></script>
-
 <script> 
 $(function() {
   var clipboard = new ClipboardJS('#clipboard-btn');
@@ -82,7 +79,6 @@ $(function() {
     console.info('Action:', e.action);
     console.info('Text:', e.text);
     console.info('Trigger:', e.trigger);
-
     e.clearSelection();
   });
 
@@ -130,6 +126,5 @@ $(function() {
     </div>
     {% endif %}
   </div>
-
   {% if site.data.settings.disqus-identifier %} {% include disqus-comments.html %} {% endif %}
 </div>
