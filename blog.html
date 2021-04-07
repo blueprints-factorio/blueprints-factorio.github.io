@@ -8,12 +8,12 @@ published: true
 <div class="container">
   {% for post in site.posts %}
   <div class="blog-post">
-      <h1 class="blog-title">
+      <h1 class="blog-title" style="color:#ffe6c0">
         <i class="fa fa-file-text"></i>
         {{ post.title }}
       </h1>
       <br>
-      <img src="assets/img/slider/{{ post.picture }}" alt="Feature-img" align="right" width="100%" class="blog-image">
+      <img src="{{ post.image }}" alt="Feature-img" align="right" width="100%" class="blog-image">
       <br>
       <p>{{ post.description }}</p>
       <span class="badge">{{ post.date | date: '%B %d, %Y' }}</span>

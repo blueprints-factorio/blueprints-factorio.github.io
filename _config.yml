@@ -14,8 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: 异星工厂 factorio 蓝图
-description: 异星工厂蓝图 异星工厂攻略 factorio蓝图 factorio攻略 blueprints # this means to ignore newlines until "baseurl:"
-keywords: 异星工厂蓝图 异星工厂攻略 factorio蓝图 factorio攻略 blueprints
+description: 异星工厂蓝图 异星工厂攻略 factorio蓝图 factorio攻略 blueprints factorio异星工厂蓝图分享 # this means to ignore newlines until "baseurl:"
+keywords: 异星工厂蓝图 异星工厂攻略 factorio蓝图 factorio攻略 blueprints factorio异星工厂蓝图分享
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -55,3 +55,5 @@ tag_page_layout:      tag_page
 sass:
   sass_dir: assets/sass
   style: compressed
+
+google_analytics: UA-02EEBTJ7XB
