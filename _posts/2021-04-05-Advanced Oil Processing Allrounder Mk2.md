@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "高级原油加工"
-description: "This is my concept of a beaconless advanced oil processing. It works totally fine without robots, so you can build it right when you start with advanced oil processing and can still use it when you have robots."
+description: "输入:【原油、水、煤、铁片、铜片】<br />输出:【塑料、固体燃料、电池、硫酸】"
 date:   2021-03-31 18:05:55 +0300
 image:  /assets/images/5ewNtcel.jpeg
 thumbnail: /assets/images/5ewNtceb.jpeg

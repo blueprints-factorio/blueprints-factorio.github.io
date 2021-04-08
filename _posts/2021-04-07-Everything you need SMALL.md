@@ -1,13 +1,7 @@
 ---
 layout: post
-title:  "全部包"
-description: "90 iron ore per sec     
-    30 copper ore per sec
-    30 stone per sec
-    15 coal per sec
-    15 uranium per sec
-    160 oil per sec
-    water"
+title:  "全部包(1)"
+description: "中期游戏生产线，包含基本所需所有材料"
 date:   2021-03-31 18:05:55 +0300
 image:  /assets/images/Ls3G29Dl.jpeg
 thumbnail: /assets/images/Ls3G29Db.jpeg
